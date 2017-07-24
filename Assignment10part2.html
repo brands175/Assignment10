@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Assignment 10 Part 2</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		var listap = "<li>Appended Items</li>"
+		var textap = "<strong>Appended text.</strong>"
+		
+			$(document).ready(function() {
+				$("#btn1").click(function() {
+					$("p").append(textap)})
+					
+				$("#btn2").click(function() {
+					$("ol").append(listap)})
+			});
+			
+		</script>
+	</head>
+	<body>
+		<p>This is a paragraph.</p>
+		<p>This is another paragraph.</p>
+		
+		<ol>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+		</ol>
+		
+		<button id = "btn1">Append Text</button>
+		<button id = "btn2">Append List Items</button>
+	</body>
+</html>
